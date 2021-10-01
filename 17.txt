@@ -1,0 +1,20 @@
+/******************************************************************************
+Zadanie 17 - program, ktory prosi uzytkownika o podanie liczby calkowitej,
+            a nastepnie wypisuje ja na ekranie. 
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int liczba ;
+    printf("Podaj liczbe calkowita: \n");
+   if(scanf("%d", &liczba), getchar()!='\n'){
+       printf("Bledne dane. Koniec programu.");
+   }
+   else {
+    printf("Podales liczbe: %d \n", liczba);
+   }
+    
+    return 0;
+}
